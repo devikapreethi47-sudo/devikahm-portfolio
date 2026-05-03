@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Devika H M</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DEVIKA.</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certifications.html" class="active">Certifications</a></li>
+                </ul>
+                <a href="resume.jpeg" target="_blank" class="btn btn-outline">
+                    <i data-lucide="download"></i> Resume
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="section-title reveal">
+                <h2>Certifications</h2>
+                <p>Professional recognitions and completed courses.</p>
+            </div>
+
+            <div class="certs-grid">
+                <!-- Certificate Placeholder 1 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Java Programming</h3>
+                        <p class="issuer">Example Institution</p>
+                        <p class="date">Issued: 2024</p>
+                        <div class="cert-footer">
+                            <a href="#" class="view-cert">View Certificate <i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate Placeholder 2 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Python for Data Science</h3>
+                        <p class="issuer">Tech Academy</p>
+                        <p class="date">Issued: 2024</p>
+                        <div class="cert-footer">
+                            <a href="#" class="view-cert">View Certificate <i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty State for new certificates -->
+                <div class="cert-card empty reveal">
+                    <div class="cert-icon">
+                        <i data-lucide="plus-circle"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Your Next Achievement</h3>
+                        <p>Adding more certifications soon...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">DEVIKA.</div>
+                    <p>Tiptur, Karnataka</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:devikapreethi47@gmail.com"><i data-lucide="mail"></i></a>
+                    <a href="tel:6361357625"><i data-lucide="phone"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Devika H M. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .certs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .cert-card {
+            background: var(--surface);
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: var(--transition-slow);
+        }
+
+        .cert-card:hover {
+            transform: scale(1.03);
+            border-color: var(--accent);
+        }
+
+        .cert-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px dashed var(--border);
+        }
+
+        .cert-card:hover .cert-icon {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: #fff;
+        }
+
+        .cert-details h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .issuer {
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 0.2rem;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .cert-footer {
+            margin-top: auto;
+        }
+
+        .view-cert {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .cert-card.empty {
+            opacity: 0.6;
+            border-style: dashed;
+        }
+
+        .cert-card.empty .cert-icon {
+            color: var(--text-muted);
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>

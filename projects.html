@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Devika H M</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DEVIKA.</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                </ul>
+                <a href="resume.jpeg" target="_blank" class="btn btn-outline">
+                    <i data-lucide="download"></i> Resume
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="section-title reveal">
+                <h2>My Projects</h2>
+                <p>A selection of my recent work and academic projects.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="placeholder-img" style="background: #f0f4f8;"><i data-lucide="database"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Java</span>
+                        <h3>Inventory Management System</h3>
+                        <p>A robust backend application designed to track stock levels and manage orders efficiently.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>JDBC</span>
+                        </div>
+                        <a href="#" class="view-project">View Details <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="placeholder-img" style="background: #fff5f0;"><i data-lucide="line-chart"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Python</span>
+                        <h3>Data Analysis Toolkit</h3>
+                        <p>Exploring datasets to uncover insights using Python libraries and visualization tools.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <a href="#" class="view-project">View Details <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <div class="placeholder-img" style="background: #fdfdfd;"><i data-lucide="globe"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Web</span>
+                        <h3>Portfolio Website</h3>
+                        <p>A personal showcase of skills and achievements built with modern web standards.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <a href="#" class="view-project">View Details <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">DEVIKA.</div>
+                    <p>Tiptur, Karnataka</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:devikapreethi47@gmail.com"><i data-lucide="mail"></i></a>
+                    <a href="tel:6361357625"><i data-lucide="phone"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Devika H M. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .project-card {
+            background: var(--surface);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: var(--transition-slow);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .project-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .placeholder-img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+
+        .placeholder-img i {
+            width: 64px;
+            height: 64px;
+            opacity: 0.2;
+        }
+
+        .project-info {
+            padding: 2rem;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-info p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tags span {
+            background: var(--bg);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .view-project {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .view-project:hover {
+            gap: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>

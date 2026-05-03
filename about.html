@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Devika H M</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DEVIKA.</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                </ul>
+                <a href="resume.jpeg" target="_blank" class="btn btn-outline">
+                    <i data-lucide="download"></i> Resume
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="section-title reveal">
+                <h2>About Me</h2>
+                <p>Passionate BCA student with a drive for technology and innovation.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>Professional Profile</h3>
+                    <p>I am a Bachelor of Computer Application student at Tumkur University. I consider myself a responsible and orderly person, always looking forward to my first professional work experience where I can apply my academic knowledge to real-world challenges.</p>
+                    <p>My journey in computer science began with a curiosity for how software shapes the world. Today, I focus on mastering backend development with Java and exploring data-driven solutions with Python.</p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="label">Location:</span>
+                            <span class="value">Tiptur, Karnataka</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email:</span>
+                            <span class="value">devikapreethi47@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Language:</span>
+                            <span class="value">English, Kannada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column reveal">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Web Development (HTML/CSS)</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Project Management</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">DEVIKA.</div>
+                    <p>Tiptur, Karnataka</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:devikapreethi47@gmail.com"><i data-lucide="mail"></i></a>
+                    <a href="tel:6361357625"><i data-lucide="phone"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Devika H M. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .about-text h3, .skills-column h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .personal-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-item .label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .info-item .value {
+            color: var(--text-main);
+        }
+
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 4px;
+            transition: 1.5s ease-out;
+        }
+
+        @media (max-width: 992px) {
+            .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .personal-info { grid-template-columns: 1fr; }
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
